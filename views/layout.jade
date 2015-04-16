@@ -10,16 +10,15 @@ html
     h1= title || 'Presidents of the United States'
     p Learn more about the Presidents of the United States
     
-    ul
-      li
+    nav#navigation
+      .nav
         a(href='/') List of Presidents
-      li
+      .nav
         a(href='/search-by-year') Presidents by year
-      li
+      .nav
         a(href='/search-by-name') Find Presidents by name
-      li
+      .nav
         a(href='/parties') Presidential parties
-        
-    hr
     
-    block content
+    #content
+      block content
