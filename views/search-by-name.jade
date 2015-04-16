@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  
+  label(for='q') Search&nbsp;
+  input#q(placeholder='Search by first or last name')
+  | &nbsp;
+  button#search-btn(type='button') Search
+  
+  ul#presidents
+  
+  script(src='/javascripts/search-by-name.js')

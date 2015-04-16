@@ -3,5 +3,23 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="//code.jquery.com/jquery-1.11.2.min.js")
+    script(src="/javascripts/application.js")
   body
+    
+    h1= title || 'Presidents of the United States'
+    p Learn more about the Presidents of the United States
+    
+    ul
+      li
+        a(href='/') List of Presidents
+      li
+        a(href='/search-by-year') Presidents by year
+      li
+        a(href='/search-by-name') Find Presidents by name
+      li
+        a(href='/parties') Presidential parties
+        
+    hr
+    
     block content

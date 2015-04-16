@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  
+  h3 Party
+  p= president.party
+  
+  h3 Years in office
+  ul
+    - for(var i=0; i < president.years.length; i++) {
+      li= president.years[i]
+    - }
