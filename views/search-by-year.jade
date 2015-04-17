@@ -2,12 +2,14 @@ extends layout
 
 block content
   
-  label(for='year') Year in office&nbsp;
-  select#year(placeholder='Select Year...')
-    option(value=0) Select Year...
-    - for (var i=1789; i <= parseInt(new Date().getFullYear()); i++) {
-      option(value=i)= i
-    - }
+  #year-form
+    .field
+      label(for='year') Year in office&nbsp;
+      select#year(placeholder='Select Year...')
+        option(value=0) Select Year...
+        - for (var i=1789; i <= parseInt(new Date().getFullYear()); i++) {
+          option(value=i)= i
+        - }
   
   ul#presidents
     

@@ -2,8 +2,12 @@ extends layout
 
 block content
   
-  canvas#chart(width="500", height="500")
-  #legend
+  #chart-display
+    .col-1-3
+      #legend
+    
+    .col-2-3
+      canvas#chart(width="500", height="500")
     
   script(src='/javascripts/Chart.min.js')
   script(src='/javascripts/parties.js')

@@ -2,10 +2,11 @@ extends layout
 
 block content
   
-  label(for='q') Search&nbsp;
-  input#q(placeholder='Search by first or last name')
-  | &nbsp;
-  button#search-btn(type='button') Search
+  .search-form
+    .field
+      input#q(type='text', placeholder='Search by first or last name')
+    
+    button#search-btn.btn(type='button') Search
   
   ul#presidents
   
